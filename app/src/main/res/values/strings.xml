@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">نوبت دهی پزشکان</string>
+    <string name="name_lastNameTitle">نام و نام خانوادگی : </string>
+    <string name="passwordTitle">گذرواژه : </string>
+    <string name="addressTitle">آدرس : </string>
+    <string name="noExistingContent">هیچ محتوایی وجود ندارد</string>
+    <string name="search">جستجو</string>
+    <string name="searchTitle">جستجو ...</string>
+    <string name="specialityTitle">تخصص : </string>
+    <string name="loginAsManager">ورود به عنوان مدیر</string>
+    <string name="login">ورود</string>
+    <string name="name_or_password_is_wrong">نام یا گذرواژه اشتباه است</string>
+    <string name="managerMode">حالت مدیر</string>
+    <string name="userMode">حالت کاربر</string>
+    <string name="signOutManagerMode">خروج از حالت مدیر</string>
+    <string name="add">اضافه کردن</string>
+    <string name="data_was_not_saved">داده ذخیره نشد</string>
+    <string name="exited_the_manager_mode">از حالت مدیر خارج شد</string>
+    <string name="usernameTitle">نام کاربری : </string>
+    <string name="reserve">گرفتن نوبت</string>
+    <string name="call_the_manager">تماس با مدیر</string>
+    <string name="afternoon">بعد از ظهر</string>
+    <string name="noon">ظهر</string>
+    <string name="morning">صبح</string>
+    <string name="successfully_done">با موفقیت انجام شد</string>
+    <string name="communicateWithManager">ارتباط با مدیر</string>
+    <string name="email">ایمیل</string>
+    <string name="phone">تلفن</string>
+</resources>

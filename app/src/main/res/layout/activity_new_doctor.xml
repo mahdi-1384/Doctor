@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/saveImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="onSaveImgClicked"
+        app:layout_constraintWidth_percent="0.08"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_margin="16dp"
+        android:src="@drawable/check"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/activityLoginTextInputLayoutTheme"
+            android:hint="@string/name_lastNameTitle"/>
+
+        <EditText
+            android:id="@+id/addressEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/activityLoginTextInputLayoutTheme"
+            android:hint="@string/addressTitle"/>
+
+        <EditText
+            android:id="@+id/specialityEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/activityLoginTextInputLayoutTheme"
+            android:hint="@string/specialityTitle"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        app:layout_constraintBottom_toTopOf="@id/addBtn"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/morningRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning"
+            style="@style/activityNewDoctorRadioBtnStyle"/>
+
+        <RadioButton
+            android:id="@+id/noonRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noon"
+            style="@style/activityNewDoctorRadioBtnStyle"/>
+
+        <RadioButton
+            android:id="@+id/afternoonRbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/afternoon"
+            style="@style/activityNewDoctorRadioBtnStyle"/>
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/add"
+        android:textSize="17sp"
+        android:padding="8dp"
+        app:cornerRadius="8dp"
+        android:onClick="onAddBtnClicked"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
